@@ -1,0 +1,5 @@
+Box: ScriptKiddie
+IP: 10.10.10.226
+Host: Linux
+https://itsecuritydz.wordpress.com/2021/03/09/script-kiddie-hackthebox-walk-through/
+https://www.programmersought.com/article/30917684987/

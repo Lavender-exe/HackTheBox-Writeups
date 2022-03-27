@@ -1,0 +1,28 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-05-17 07:27 EDT
+Stats: 0:12:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 92.38% done; ETC: 07:41 (0:01:01 remaining)
+Nmap scan report for 10.10.10.226
+Host is up (0.16s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 3c:65:6b:c2:df:b9:9d:62:74:27:a7:b8:a9:d3:25:2c (RSA)
+|   256 b9:a1:78:5d:3c:1b:25:e0:3c:ef:67:8d:71:d3:a3:ec (ECDSA)
+|_  256 8b:cf:41:82:c6:ac:ef:91:80:37:7c:c9:45:11:e8:43 (ED25519)
+5000/tcp open  http    Werkzeug httpd 0.16.1 (Python 3.8.5)
+|_http-title: k1d'5 h4ck3r t00l5
+Device type: firewall
+Running: Fortinet embedded
+OS CPE: cpe:/h:fortinet:fortigate_100d
+OS details: Fortinet FortiGate 100D firewall
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1723/tcp)
+HOP RTT       ADDRESS
+1   141.48 ms 10.10.16.1
+2   142.41 ms 10.10.10.226
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 846.76 seconds

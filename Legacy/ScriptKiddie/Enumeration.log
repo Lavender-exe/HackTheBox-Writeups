@@ -1,0 +1,37 @@
+Ports:
+
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+
+5000/tcp open  http    Werkzeug httpd 0.16.1 (Python 3.8.5)
+    Device type: firewall
+    Running: Fortinet embedded
+    OS CPE: cpe:/h:fortinet:fortigate_100d
+    OS details: Fortinet FortiGate 100D firewall
+    Network Distance: 2 hops
+    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Domains:
+
+http://10.10.10.226:5000/
+
+
+Exploit Tools:
+
+22: 
+
+https://www.rapid7.com/db/modules/auxiliary/scanner/ssh/fortinet_backdoor/
+
+5000:
+
+https://www.rapid7.com/db/modules/exploit/multi/http/werkzeug_debug_rce/
+https://www.exploit-db.com/exploits/43905
+https://snyk.io/vuln/pip:werkzeug
+
+https://www.cvedetails.com/cve/CVE-2012-4948/
+
+Upload Poisoning:
+
+https://www.rapid7.com/db/modules/exploit/unix/fileformat/metasploit_msfvenom_apk_template_cmd_injection/
+
+
+

@@ -1,0 +1,4 @@
+Name: Love
+IP: 10.10.10.239
+Host: Windows 10 Pro
+W/U: https://0xdedinfosec.github.io/posts/htb-love/

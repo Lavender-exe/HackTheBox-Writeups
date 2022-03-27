@@ -1,0 +1,87 @@
+PORTS:
+
+80/tcp    open  http?
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http     Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+445/tcp   open  microsoft-ds Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql?
+5000/tcp  open  http         Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+5040/tcp  open  unknown
+5985/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5986/tcp  open  ssl/http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc        Microsoft Windows RPC
+49665/tcp open  msrpc        Microsoft Windows RPC
+49666/tcp open  msrpc        Microsoft Windows RPC
+49667/tcp open  msrpc        Microsoft Windows RPC
+49668/tcp open  msrpc        Microsoft Windows RPC
+49669/tcp open  msrpc        Microsoft Windows RPC
+49670/tcp open  msrpc        Microsoft Windows RPC
+
+
+80 HTTP:
+
+Runs on Apache 2.4.46
+
+    https://www.tenable.com/plugins/nessus/139574
+    https://httpd.apache.org/security/vulnerabilities_24.html
+
+Has PHP 7.3.27 
+
+    https://www.tenable.com/plugins/nessus/146311
+    https://www.exploit-db.com/exploits/49615
+
+Domains:
+
+http://10.10.10.239/bower_components/font-awesome/HELP-US-OUT.txt
+
+Changing 80 to 443 (https) gives back info
+
+    You don't have permission to access this resource.
+    Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27 Server at 10.10.10.239 Port 443
+
+If we check the certificates after HTTPS we'll find staging.love.htb
+add it to /etc/hosts then go to staging.love.htb
+
+It takes us to a free file hosting server/scanner
+Go to medium and try localhost:5000
+http://127.0.0.1:5000
+
+it returns a user:pass cred for voters
+Vote Admin Creds:-
+admin: @LoveIsInTheAir!!!! 
+
+Login into the voters dashboard
+Check exploits for VTS 1.0
+
+https://www.exploit-db.com/exploits/49846
+https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/minified/php_reverse_shell_mini.php
+
+143 SMB:
+
+    | smb-os-discovery: 
+    |   OS: Windows 10 Pro 19042 (Windows 10 Pro 6.3)
+    |   OS CPE: cpe:/o:microsoft:windows_10::-
+    |   Computer name: Love
+    |   NetBIOS computer name: LOVE\x00
+    |   Workgroup: WORKGROUP\x00
+    |_  System time: 2021-05-17T14:24:27-07:00
+    | smb-security-mode: 
+    |   account_used: guest
+    |   authentication_level: user
+    |   challenge_response: supported
+    |_  message_signing: disabled (dangerous, but default)
+    | smb2-security-mode: 
+    |   2.02: 
+    |_    Message signing enabled but not required
+    | smb2-time: 
+    |   date: 2021-05-17T21:24:25
+    |_  start_date: N/A
+
+
+
+
+
+
+

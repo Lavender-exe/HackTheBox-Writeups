@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "e624df07d8a672fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "10e752ecee2ad2c8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "etcshadow.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0ea2205bf1da09b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3cc98900c506ada",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "451669b3a5a9c88f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8f6b00b22bd05484",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3d45a996d5ade4a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "371371c1a2af20a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22b4d3dddfe8a3f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "etcshadow.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "10e752ecee2ad2c8",
+  "lastOpenFiles": [
+    "etcshadow.md",
+    "Exploitation.md",
+    "Flag.md",
+    "Enumeration.md",
+    "References.md",
+    "Start Node.md",
+    "nmap.md",
+    "Nikto.md",
+    "Untitled.md"
+  ]
+}

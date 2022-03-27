@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "e843794305934fdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "c031c65cfaff5964",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4819759f820eeb80",
+    "type": "split",
+    "children": [
+      {
+        "id": "b89017b39627b47d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07a4ddfb05ad3571",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a5e62a253d4aeb8c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1bec2851fd3da99b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d625f6f234a3a348",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b6d84ba56a7633c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c031c65cfaff5964",
+  "lastOpenFiles": [
+    "etc-shadow.md",
+    "Exploitation.md",
+    "Flag.md",
+    "Enumeration.md",
+    "Start Node.md",
+    "http.md",
+    "nikto.md",
+    "nmap.md"
+  ]
+}

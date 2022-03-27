@@ -3,5 +3,5 @@ IP: 10.10.10.68
 Host: Linux
 
 [[Notes]]
-[[Enumeration]]
-[[Exploitation]]
+[[Boxes/HackTheBox Writeups/Legacy/Bashed/Enumeration]]
+[[Boxes/HackTheBox Writeups/Legacy/Bashed/Exploitation]]
