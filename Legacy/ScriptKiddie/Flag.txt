@@ -1,6 +1,0 @@
-cat user.txt
-ebcd104d70f36074dd1cdb84608117d4
-
-
-[*] exec: cat root.txt
-ade2a3cca133a8f4afda222d735bbc32
