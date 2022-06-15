@@ -1,6 +1,0 @@
-C:\Users\Phoebe\Desktop>type user.txt
-7fccff9b1352fce2a1025caf2af20ed4
-
-type root.txt
-92163490ef0d08556b72101be2aa428e
-
