@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Jun 11 00:51:16 2022 as: nmap -T4 -A -p 6379 -vvv -oX Redeemer-init.xml 10.129.189.65 -->
+<nmaprun scanner="nmap" args="nmap -T4 -A -p 6379 -vvv -oX Redeemer-init.xml 10.129.189.65" start="1654923076" startstr="Sat Jun 11 00:51:16 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="6379"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1654923076"/>
+<taskend task="NSE" time="1654923076"/>
+<taskbegin task="NSE" time="1654923076"/>
+<taskend task="NSE" time="1654923076"/>
+<taskbegin task="NSE" time="1654923076"/>
+<taskend task="NSE" time="1654923076"/>
+<taskbegin task="Ping Scan" time="1654923076"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.189.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1654923076" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1654923076"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1654923076"/>
+<taskbegin task="SYN Stealth Scan" time="1654923076"/>
+<taskend task="SYN Stealth Scan" time="1654923076" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1654923077"/>
+<taskend task="Service scan" time="1654923083" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1654923091"/>
+<taskend task="Traceroute" time="1654923091"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1654923091"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1654923091"/>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<host starttime="1654923076" endtime="1654923091"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.189.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="6379"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="redis" product="Redis key-value store" version="5.0.7" method="probed" conf="10"><cpe>cpe:/a:redislabs:redis:5.0.7</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="6379"/>
+<portused state="closed" proto="udp" portid="31418"/>
+<osmatch name="Linux 4.15 - 5.6" accuracy="94" line="67241">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0" accuracy="94" line="68045">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.3" accuracy="94" line="68085">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="94" line="68106">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="94" line="68143">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="94" line="62920">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="94" line="64667">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61818">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="55656">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.4" accuracy="94" line="68179">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5.4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.92%E=4%D=6/11%OT=6379%CT=%CU=31418%PV=Y%DS=2%DC=T%G=N%TM=62A41F53%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=EE%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)&#xa;OPS(O1=M54BST11NW7%O2=M54BST11NW7%O3=M54BNNT11NW7%O4=M54BST11NW7%O5=M54BST11NW7%O6=M54BST11)&#xa;WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)&#xa;ECN(R=Y%DF=Y%T=40%W=FAF0%O=M54BNNSNW7%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="3426194" lastboot="Mon May  2 09:08:17 2022"/>
+<distance value="2"/>
+<tcpsequence index="238" difficulty="Good luck!" values="17EA370,CA7D2051,9331CA28,D1B2CBDF,A20BDCB2,D77516DD"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="CC37864D,CC3786CF,CC378709,CC3787D3,CC3787D3,CC378857"/>
+<trace port="6379" proto="tcp">
+<hop ttl="1" ipaddr="10.10.16.1" rtt="260.08"/>
+<hop ttl="2" ipaddr="10.129.189.65" rtt="130.21"/>
+</trace>
+<times srtt="288433" rttvar="91914" to="656089"/>
+</host>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<taskbegin task="NSE" time="1654923091"/>
+<taskend task="NSE" time="1654923091"/>
+<runstats><finished time="1654923091" timestr="Sat Jun 11 00:51:31 2022" summary="Nmap done at Sat Jun 11 00:51:31 2022; 1 IP address (1 host up) scanned in 15.87 seconds" elapsed="15.87" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

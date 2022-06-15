@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Jun 11 02:29:18 2022 as: nmap -T4 -A -vvv -p- -oX Responder_All.xml 10.129.187.36 -->
+<nmaprun scanner="nmap" args="nmap -T4 -A -vvv -p- -oX Responder_All.xml 10.129.187.36" start="1654928958" startstr="Sat Jun 11 02:29:18 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1654928959"/>
+<taskend task="NSE" time="1654928959"/>
+<taskbegin task="NSE" time="1654928959"/>
+<taskend task="NSE" time="1654928959"/>
+<taskbegin task="NSE" time="1654928959"/>
+<taskend task="NSE" time="1654928959"/>
+<taskbegin task="Ping Scan" time="1654928959"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.187.36" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1654928959" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1654928959"/>
+<taskprogress task="SYN Stealth Scan" time="1654928990" percent="5.15" remaining="572" etc="1654929561"/>
+<taskprogress task="SYN Stealth Scan" time="1654929020" percent="11.58" remaining="466" etc="1654929486"/>
+<taskprogress task="SYN Stealth Scan" time="1654929050" percent="23.88" remaining="291" etc="1654929340"/>
+<taskprogress task="SYN Stealth Scan" time="1654929080" percent="40.63" remaining="177" etc="1654929257"/>
+<taskprogress task="SYN Stealth Scan" time="1654929110" percent="61.93" remaining="93" etc="1654929203"/>
+<taskprogress task="SYN Stealth Scan" time="1654929140" percent="78.22" remaining="51" etc="1654929190"/>
+<taskend task="SYN Stealth Scan" time="1654929190" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1654929190"/>
+<taskend task="Service scan" time="1654929197" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1654929206"/>
+<taskend task="Traceroute" time="1654929207"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1654929207"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1654929207"/>
+<taskbegin task="NSE" time="1654929207"/>
+<taskend task="NSE" time="1654929217"/>
+<taskbegin task="NSE" time="1654929217"/>
+<taskend task="NSE" time="1654929219"/>
+<taskbegin task="NSE" time="1654929219"/>
+<taskend task="NSE" time="1654929219"/>
+<host starttime="1654928959" endtime="1654929219"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.187.36" addrtype="ipv4"/>
+<hostnames>
+<hostname name="unika.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.52" extrainfo="(Win64) OpenSSL/1.1.1m PHP/8.1.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.52</cpe></service><script id="http-server-header" output="Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1"><elem>Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Unika"><elem key="title">Unika</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows XP SP3" accuracy="87" line="84874">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="87"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2" accuracy="85" line="81598">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="85"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.92%E=4%D=6/11%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=62A43743%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=FF%GCD=1%ISR=10B%TI=I%II=I%TS=U)&#xa;OPS(O1=M54BNW8NNS%O2=M54BNW8NNS%O3=M54BNW8%O4=M54BNW8NNS%O5=M54BNW8NNS%O6=M54BNNS)&#xa;WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)&#xa;ECN(R=Y%DF=Y%TG=80%W=FFFF%O=M54BNW8NNS%CC=N%Q=)&#xa;T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="254" difficulty="Good luck!" values="70DB7F94,A83CE7C1,580B0A03,311F25DC,7BDCF6F3,17ED5B67"/>
+<ipidsequence class="Randomized" values="FE33,FE34,FE35,FE37,FE36,FE38"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.10.16.1" rtt="318.51"/>
+<hop ttl="2" ipaddr="10.129.187.36" rtt="487.17" host="unika.htb"/>
+</trace>
+<times srtt="366984" rttvar="150287" to="968132"/>
+</host>
+<taskbegin task="NSE" time="1654929219"/>
+<taskend task="NSE" time="1654929219"/>
+<taskbegin task="NSE" time="1654929219"/>
+<taskend task="NSE" time="1654929219"/>
+<taskbegin task="NSE" time="1654929219"/>
+<taskend task="NSE" time="1654929219"/>
+<runstats><finished time="1654929219" timestr="Sat Jun 11 02:33:39 2022" summary="Nmap done at Sat Jun 11 02:33:39 2022; 1 IP address (1 host up) scanned in 260.19 seconds" elapsed="260.19" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
